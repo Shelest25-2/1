@@ -17,7 +17,7 @@ $message =
 
 
 
-
+mail($to, $subject, $message);
 if (mail($to, $subject, $message)) {
     echo "Сообщение отправлено!";
 } else {
@@ -25,7 +25,6 @@ if (mail($to, $subject, $message)) {
 
     echo "Ошибка при отправке сообщения.";
 }
-header('Location: ./task1.html');
 
 ?>
 
