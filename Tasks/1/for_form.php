@@ -2,7 +2,6 @@
 $to = "saneescomic@mail.ru";
 $subject = "Новое сообщение с сайта";
 
-
 $message = 
 "Имя: " . $_POST['name'].
 "Фамилия". $_POST['surname'].
@@ -14,18 +13,7 @@ $message =
 "Любимый ЯП". $_POST['favorite'].
 "Сообщение:" . $_POST['biograph'];
 
-
-
-
 mail($to, $subject, $message);
-if (mail($to, $subject, $message)) {
-    echo "Сообщение отправлено!";
-} else {
-
-
-    echo "Ошибка при отправке сообщения.";
-}
-
 ?>
 
 
