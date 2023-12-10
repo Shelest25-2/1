@@ -1,7 +1,4 @@
 <?php
-$to = "saneescomic@mail.ru";
-$subject = "Новое сообщение с сайта";
-
 $message = 
 "Имя: " . $_POST['name'].
 "Фамилия". $_POST['surname'].
@@ -13,7 +10,12 @@ $message =
 "Любимый ЯП". $_POST['favorite'].
 "Сообщение:" . $_POST['biograph'];
 
-mail($to, $subject, $message);
+
+if (mail("saneescomic@mail.ru", "ФОРМА", $message)) {
+    echo "Сообщение отправлено!";
+} else {
+    echo "Ошибка при отправке сообщения.";
+}
+
+
 ?>
-
-
