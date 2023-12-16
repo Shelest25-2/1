@@ -3,7 +3,8 @@ header{
     background-color:#595;  
     height:150px;
     margin:0;
-
+    padding-top:10px;
+    
     font-size: 18pt;
     font-family: "Comic Sans MS", monotype;
     font-weight: bold;
@@ -35,16 +36,15 @@ div.form_block
 }
 
 div.header_1{
-    width:1400px;
+    width:75%;
     background-color:#575;
     padding:10px;
     margin-left:10px;
-    margin-top:20px;
     height:10px;
 }
 
 nav{
-    width:1400px;
+    width:75%;
     background-color:#575;
     padding:10px;
     margin-left:10px;
@@ -52,7 +52,6 @@ nav{
 img.moss{
     float:left;
     margin:15px;
-    margin-top:10;
     width:100px;
     height:100px;
 
