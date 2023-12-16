@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+
+    <title>Задание первое</title>
+</head>
+
+<body bgcolor="lightgray">
+    <h2>Ссылки</h2>
+    <ul>
+        <li>абсолютная <a href="http://www.kubsu.ru/" target="_blank">гиперссылка</a> на главную страницу сайта kubsu.ru
+        </li>
+        <li>абсолютная <a href="https://www.kubsu.ru/" target="_blank">гиперссылка</a> в протоколе https</li>
+        <li>Cсылка изображение <a href="https://www.google.ru/search?q=ссылка+изображение" target="_blank"><img
+                    src="./image.png" width="50" height="50" title="Изображение"></a></li>
+        <li>Сокращенная <a href="./in/inside.html">ссылка</a> на внутреннюю страницу</li>
+        <li>Сокращенная <a href="../../index.html">ссылка</a> на главную страницу</li>
+        <li>Ссылка на фрагмент текущей страницы (<a href="#bottom">Вниз</a>)</li>
+        <li><a href="https://www.google.ru/search?q=три+параметра&parametr2=2&parametr3=3" target="_blank">Ссылка</a> с
+            тремя параметрами в URL</li>
+        <li><a href="https://moodle.kubsu.ru/course/view.php?id=780" target="_blank">Ссылка</a> с параметром id в URL</li>
+        <li><a href="same_katalog.html">Ссылка</a> на страницу в текущем каталоге</li>
+        <li><a href="../main.html">Ссылка</a> на страницу каталогом выше</li>
+        <li><a href="../../index.html">Ссылка</a> на страницу двумя каталогами выше</li>
+        <li>
+            <p>Контекстная <a href="../../index.html">ссылка</a> в тексте абзаца (Ведет на главную)</p>
+        </li>
+        <li><a href="https://www.webpupil.ru/view_html_step.php?id=6#20" target="_blank">Ссылка</a> на фрагмент страницы
+            стороннего сайта (На фрагмент "Цвет ссылок")</li>
+
+        <li>
+            Две ссылки из областей картинки (Тег map)<br>
+            <img src="Pic1.png" width="256" height="256" usemap="#Square_Circle">
+            <map name="Square_Circle">
+                <area shape="circle" coords="128,128, 64" href="https://www.google.ru/search?q=Круг">
+                <area shape="rect" coords="0,0, 256,256" href="https://www.google.ru/search?q=Квадрат">
+            </map>
+        </li>
+
+        <li><a href="">Ссылка</a> с пустым href</li>
+        <li><a title="Ссылка не выделяется">Ссылка</a> без href</li>
+        <li><a href="https://www.google.ru/search?q=Ссылка,+по+которой+запрещен+переход+поисковикам" target="_blank"
+                rel="nofollow">
+                Ссылка</a>, по которой запрещен переход поисковикам</li>
+        <noindex>
+            <li><a href="https://www.google.ru/search?q=noindex">Ссылка</a> запрещенная для индексации поисковиками</li>
+        </noindex>
+
+        <li> Нумерованный список ссылок с подписями title
+            <ol>
+                <li><a href="https://www.google.ru/search?q=Первая" title="Первая подпись">Первая ссылка</a></li>
+                <li><a href="https://www.google.ru/search?q=Вторая" title="Вторая подпись">Вторая ссылка</a></li>
+                <li><a href="https://www.google.ru/search?q=Третья" title="Третья подпись">Третья ссылка</a></li>
+            </ol>
+        </li>
+        <li><a href="ftp://login:password@server_adress.ru/path">Ссылка</a> на файл на сервере FTP с авторизацией</li>
+    </ul>
+
+    <h2>Форма</h2>
+    <form action="for_form.php"  method="post"> 
+        <p>Фамилия: <input name="surname" required></p>
+        <p>Имя: <input name="name" required></p>
+        <p>Отчество: <input name="F_name" required></p>
+        <p>Телефон:  <input type="tel" required placeholder="8-xxx-xxx-xx-xx" name="tel" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"></p>
+        <p>Email: <input type="email" name="mail" required></p>
+        <p>Дата рождения:<input name="date" value="2023-01-01" type="date"></p>
+        Пол:<br>
+        <p><input type="radio" checked="checked" name="group1" value="Мужчина">"Мужчина"</p>
+        <p><input type="radio" name="group1" value="Женщина">"Женщина"</p>
+        
+        <p><select size="3" multiple name="favorite">
+            <option disabled>Любимый язык?</option>
+            <option value="Pascal">Pascal</option>
+            <option selected value="C++">C++</option>
+            <option value="C">C</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="PHP">PHP</option>
+            <option value="Phyton">Phyton</option>
+            <option value="Java">Java</option>
+            <option value="Haskel">Haskel</option>
+            <option value="Clojure">Clojure</option>
+            <option value="Prololg">Prolog</option>
+            <option value="Scala">Scala</option>
+           </select>
+
+        </p>
+
+        <p><textarea name="biograph" minlength="30" placeholder="Минимум 30 символов" required></textarea></p>
+
+        <p><input type="checkbox" name="check" required> Данные верны</p>
+        <p><input type="submit" value="Отправить на введенную почту"></p>
+        
+    </form>
+
+
+    <a name="bottom"></a>
+</body>
+
+</html>
