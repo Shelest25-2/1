@@ -1,7 +1,12 @@
 header{
     width:100%; 
     background-color:#595;  
-    height:150px;margin:0;
+    height:150px;
+    margin:0;
+
+    font-size: 18pt;
+    font-family: "Comic Sans MS", monotype;
+    font-weight: bold;
 }
 
 div.links_block{
@@ -90,16 +95,6 @@ font-weight: bold;
 color:#aae;
 background-color:#552;
 }
-
-
-
-div.head {
-font-size: 18pt;
-font-family: "Comic Sans MS", monotype;
-font-weight: bold;
-}
-
-
 
 li {
 font-size: 14pt;
