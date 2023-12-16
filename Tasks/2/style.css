@@ -10,8 +10,7 @@ header{
     font-weight: bold;
 }
 
-div.simple_block
-{
+div.simple_block{
     max-width:960px;
     background-color:#7c7;
     margin: 0 auto;
