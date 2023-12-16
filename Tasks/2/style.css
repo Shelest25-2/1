@@ -10,24 +10,7 @@ header{
     font-weight: bold;
 }
 
-div.links_block{
-    max-width:960px;
-    background-color:#7c7;
-    margin: 0 auto;
-    margin-top:20px;
-    padding:10px;
-}
-
-div.tabl_block{
-    max-width:960px;
-    background-color:#7c7;
-    margin: 0 auto;
-    margin-top:20px;
-    padding:10px;"
-}
-
-div.form_block
-{
+div.simple_block{
     max-width:960px;
     background-color:#7c7;
     margin: 0 auto;
