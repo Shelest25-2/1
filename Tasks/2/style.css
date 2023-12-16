@@ -4,6 +4,31 @@ header{
     height:150px;margin:0;
 }
 
+div.links_block{
+    max-width:960px;
+    background-color:#7c7;
+    margin: 0 auto;
+    margin-top:20px;
+    padding:10px;
+}
+
+div.tabl_block{
+    max-width:960px;
+    background-color:#7c7;
+    margin: 0 auto;
+    margin-top:20px;
+    padding:10px;"
+}
+
+div.form_block
+{
+    max-width:960px;
+    background-color:#7c7;
+    margin: 0 auto;
+    margin-top:20px;
+    padding:10px;
+}
+
 div.header_1{
     width:1400px;
     background-color:#575;
@@ -91,4 +116,11 @@ font-family: "Comic Sans MS", monotype;
 body{
     margin:0;
     background-color:#dfd;
+}
+
+footer{
+    "width:100%;
+    background-color:#575;
+    margin-top:20px;
+    height:100px"
 }
