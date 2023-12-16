@@ -62,7 +62,7 @@ font-family: "Comic Sans MS", monotype;
 border-radius: 50%;
 }
 
-
-.round {
-border-radius: 50%;
+body{
+    margin:0;
+    background-color:#dfd;
 }
