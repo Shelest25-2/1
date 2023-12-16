@@ -1,1 +1,68 @@
+a{
+    color:#911;
+}
 
+td{
+font-size: 14pt;
+font-family: "Comic Sans MS", monotype;
+font-weight: bold;
+color:#525;
+background-color:#aea;
+}
+
+.chet{
+font-size: 14pt;
+font-family: "Comic Sans MS", monotype;
+font-weight: bold;
+color:#aea;
+background-color:#525;
+}
+
+th{
+font-size: 14pt;
+font-family: "Comic Sans MS", monotype;
+font-weight: bold;
+color:#552;
+background-color:#aae;
+}
+
+
+.chetk{
+font-size: 14pt;
+font-family: "Comic Sans MS", monotype;
+font-weight: bold;
+color:#aae;
+background-color:#552;
+}
+
+
+
+div.head {
+font-size: 18pt;
+font-family: "Comic Sans MS", monotype;
+font-weight: bold;
+}
+
+
+
+li {
+font-size: 14pt;
+font-family: "Comic Sans MS", monotype;
+}
+
+
+
+p {
+font-size: 14pt;
+font-family: "Comic Sans MS", monotype;
+}
+
+
+.round {
+border-radius: 50%;
+}
+
+
+.round {
+border-radius: 50%;
+}
