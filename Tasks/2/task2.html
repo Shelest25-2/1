@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 
 <html>
-
 <head>
-<meta charset="utf-8">
-  <title>Задание второе</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Задание второе</title>
+    <meta charset="utf-8">   
 </head>
 
-<h2>Ссылки</h2>
-  <ul>
-        <li>абсолютная <a href="http://www.kubsu.ru/" target="_blank">гиперссылка</a> на главную страницу сайта kubsu.ru
-        </li>
+<body style="margin:0;background-color:#dfd;">
+    <div style="width:100%; background-color:#595;  height:150px;margin:0;">
+      <img style="float:left; margin:15px;margin-top:10; width:100px; height:100px;" src="moss.jpg" alt="Моx" class="round">
+     <br>
+      <div class="head" style="width:1400px;background-color:#575; padding:10px;margin-left:10px;margin-top:20px;height:10px;">Второе задание</div>
+        <div class="navigation" style="width:1400px ;background-color:#575; padding:10px;margin-left:10px;">
+              <li><a href="../../index.html">На главную</a></li>
+              <li><a href="../main.html">Работы</a></li>
+        </div>
+    </div>
+
+   
+   
+    <div style="max-width:960px; background-color:#7c7; margin: 0 auto; margin-top:20px; padding:10px;">
+    <h2>Ссылки</h2>
+    <ul>
+        <li>абсолютная <a href="http://www.kubsu.ru/" target="_blank">гиперссылка</a> на главную страницу сайта kubsu.ru</li>
         <li>абсолютная <a href="https://www.kubsu.ru/" target="_blank">гиперссылка</a> в протоколе https</li>
-        <li>Cсылка изображение <a href="https://www.google.ru/search?q=ссылка+изображение" target="_blank"><img
-                    src="./image.png" width="50" height="50" title="Изображение"></a></li>
-        <li>Сокращенная <a href="./in/inside.html">ссылка</a> на внутреннюю страницу</li>
+        <li>Cсылка изображение <a href="https://www.google.ru/search?q=ссылка+изображение"  target="_blank"><img
+                    src="image.png" width="50" height="50"  class="round" title="Изображение"></a></li>
+        <li>Сокращенная <a href="in/inside.html">ссылка</a> на внутреннюю страницу</li>
         <li>Сокращенная <a href="../../index.html">ссылка</a> на главную страницу</li>
         <li>Ссылка на фрагмент текущей страницы (<a href="#bottom">Вниз</a>)</li>
         <li><a href="https://www.google.ru/search?q=три+параметра&parametr2=2&parametr3=3" target="_blank">Ссылка</a> с
@@ -57,12 +68,62 @@
         </li>
         <li><a href="ftp://login:password@server_adress.ru/path">Ссылка</a> на файл на сервере FTP с авторизацией</li>
     </ul>
-
-
-
+    </div>
     
+    
+    
+    <div style="max-width:960px; background-color:#7c7; margin: 0 auto; margin-top:20px; padding:10px;">
+    <table>
+      <tr>
+        <th  class="chetk">Колонка 1</th>
+        <th>Колонка 2</th>
+        <th  class="chetk">Колонка 3</th>
+        <th>Колонка 4</th>
+      </tr>
+      <tr>
+        <td>Ячейка (1,1)</td>
+        <td class="chet">Ячейка (1,2)</td>
+        <td>Ячейка (1,3)</td>
+        <td class="chet">Ячейка (1,4)</td>
+      </tr>
+      <tr>
+        <td class="chet">Ячейка (2,1)</td>
+        <td>Ячейка (2,2)</td>
+        <td class="chet">Ячейка (2,3)</td>
+        <td>Ячейка (2,4)</td>
+      </tr>
+      <tr>
+        <td>Ячейка (3,1)</td>
+        <td class="chet">Ячейка (3,2)</td>
+        <td>Ячейка (3,3)</td>
+        <td class="chet">Ячейка (3,4)</td>
+      </tr>
+      <tr>
+        <td class="chet">Ячейка (4,1)</td>
+        <td>Ячейка (4,2)</td>
+        <td class="chet">Ячейка (4,3)</td>
+        <td>Ячейка (4,4)</td>
+      </tr>
+      <tr>
+        <td>Ячейка (5,1)</td>
+        <td class="chet">Ячейка (5,2)</td>
+        <td>Ячейка (5,3)</td>
+        <td class="chet">Ячейка (5,4)</td>
+      </tr>
+      <tr>
+        <td class="chet">Ячейка (6,1)</td>
+        <td>Ячейка (6,2)</td>
+        <td class="chet">Ячейка (6,3)</td>
+        <td>Ячейка (6,4)</td>
+      </tr>
+    </table>
+    </div>
+    
+    
+    
+    <div style="max-width:960px; background-color:#7c7; margin: 0 auto; margin-top:20px; padding:10px;">
     <h2>Форма</h2>
-    <form action="for_form.php"  method="POST" enctype="multipart/form-data"
+    <form action="for_form.php"  method="post"> 
         <p>Фамилия: <input name="surname" required></p>
         <p>Имя: <input name="name" required></p>
         <p>Отчество: <input name="F_name" required></p>
@@ -94,10 +155,15 @@
 
         <p><input type="checkbox" name="check" required> Данные верны</p>
         <p><input type="submit" value="Отправить на введенную почту"></p>
-        
     </form>
+    </div>
+    
+    
+    
 
-
+   
+     
+      <div class="head" style="width:100%;background-color:#575;margin-top:20px;height:100px">(c)Данил Шелест</div>
     <a name="bottom"></a>
 </body>
 
