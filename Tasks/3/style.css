@@ -1,6 +1,19 @@
-.flex-container{
-    display: flex;
-    flex-wrap:wrap;
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+@media all and (max-width: 800px) {
+  .nav {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+  }
 }
 
 header{
@@ -32,12 +45,6 @@ div.header_1{
     height:10px;
 }
 
-nav{
-    width:75%;
-    background-color:#575;
-    padding:10px;
-    margin-left:10px;
-}
 img.moss{
     float:left;
     margin:15px;
