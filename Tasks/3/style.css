@@ -1,109 +1,188 @@
-nav {
+img.moss {
+  margin: 15px;
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+}
+
+body {
+  row-gap: 10px;
+  background-color: #dfd;
+  margin: 0;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
+  flex-direction: column;
 }
 
-@media all and (max-width: 800px) {
-  nav {
-    justify-content: space-around;
+
+div.header_name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  font-size: 24pt;
+  font-family: "Comic Sans MS", monotype;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+div.header_links {
+  @media (max-width:900px) {
+    flex-basis: 100%;
+  }
+  flex-grow: 1;
+}
+
+nav div {
+  padding: 10px;
+  font-size: 18pt;
+  font-family: "Comic Sans MS", monotype;
+  font-weight: bold;
+  color: red;
+}
+
+header {
+  background-color: #595;
+
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width:900px) {
+    justify-content: center;
   }
 }
 
-@media all and (max-width: 500px) {
-  nav {
+footer {
+  order: 4;
+  justify-content: left;
+  vertical-align: middle;
+
+  background-color: #595;
+
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width:900px) {
+    justify-content: center;
+  }
+}
+
+header>* {
+  align-self: stretch;
+  padding: 5px;
+  margin: 5px;
+  background-color: #575;
+}
+
+@media (max-width:900px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+nav {
+  @media (max-width:900px) {
     flex-direction: column;
+    flex-basis: 100%;
   }
-}
 
-header{
-    width:100%; 
-    background-color:#595;  
-    height:150px;
-    margin:0;
-    padding-top:10px;
-    
-    font-size: 18pt;
-    font-family: "Comic Sans MS", monotype;
-    font-weight: bold;
-}
-
-div.simple_block{
-    max-width:960px;
-    background-color:#7c7;
-    margin: 0 auto;
-    margin-top:20px;
-    margin-bottom:20px;
-    padding:10px;
-}
-
-div.header_1{
-    width:75%;
-    background-color:#575;
-    padding:10px;
-    margin-left:10px;
-    height:10px;
-}
-
-img.moss{
-    float:left;
-    margin:15px;
-    width:100px;
-    height:100px;
-
-    border-radius: 50%;
-}
-
-a{
-    color:#911;
-}
-
-td{
-font-size: 14pt;
-font-family: "Comic Sans MS", monotype;
-font-weight: bold;
-color:#525;
-background-color:#aea;
-}
-
-.chet{
-font-size: 14pt;
-font-family: "Comic Sans MS", monotype;
-font-weight: bold;
-color:#aea;
-background-color:#525;
-}
-
-th{
-font-size: 14pt;
-font-family: "Comic Sans MS", monotype;
-font-weight: bold;
-color:#552;
-background-color:#aae;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
 }
 
 
-.chetk{
-font-size: 14pt;
-font-family: "Comic Sans MS", monotype;
-font-weight: bold;
-color:#aae;
-background-color:#552;
+
+a {
+  color: #911;
+}
+
+td {
+  font-size: 14pt;
+  font-family: "Comic Sans MS", monotype;
+  font-weight: bold;
+  color: #525;
+  background-color: #aea;
+}
+
+.chet {
+  font-size: 14pt;
+  font-family: "Comic Sans MS", monotype;
+  font-weight: bold;
+  color: #aea;
+  background-color: #525;
+}
+
+th {
+  font-size: 14pt;
+  font-family: "Comic Sans MS", monotype;
+  font-weight: bold;
+  color: #552;
+  background-color: #aae;
+}
+
+
+.chetk {
+  font-size: 14pt;
+  font-family: "Comic Sans MS", monotype;
+  font-weight: bold;
+  color: #aae;
+  background-color: #552;
 }
 
 li {
-font-size: 14pt;
-font-family: "Comic Sans MS", monotype;
+  font-size: 14pt;
+  font-family: "Comic Sans MS", monotype;
 }
 
 
 
 p {
-font-size: 14pt;
-font-family: "Comic Sans MS", monotype;
+  font-size: 14pt;
+  font-family: "Comic Sans MS", monotype;
 }
 
-body{
-    margin:0;
-    background-color:#dfd;
+body>div {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width:1000px) {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  flex-grow: 1;
+  background-color: #7c7;
+
+  row-gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
 }
+
+body>div>h2 {
+  text-align: center;
+}
+
+.links {
+  @media (min-width:960px) {
+    order: 2;
+  }
+
+  order:1;
+}
+
+.tabl {
+  @media (min-width:960px) {
+    order: 1;
+  }
+order:2;
+}
+
+.form
+{
+  order:3;
+}
+ 
