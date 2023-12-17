@@ -1,0 +1,97 @@
+header{
+    width:100%; 
+    background-color:#595;  
+    height:150px;
+    margin:0;
+    padding-top:10px;
+    
+    font-size: 18pt;
+    font-family: "Comic Sans MS", monotype;
+    font-weight: bold;
+}
+
+div.simple_block{
+    max-width:960px;
+    background-color:#7c7;
+    margin: 0 auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:10px;
+}
+
+div.header_1{
+    width:75%;
+    background-color:#575;
+    padding:10px;
+    margin-left:10px;
+    height:10px;
+}
+
+nav{
+    width:75%;
+    background-color:#575;
+    padding:10px;
+    margin-left:10px;
+}
+img.moss{
+    float:left;
+    margin:15px;
+    width:100px;
+    height:100px;
+
+    border-radius: 50%;
+}
+
+a{
+    color:#911;
+}
+
+td{
+font-size: 14pt;
+font-family: "Comic Sans MS", monotype;
+font-weight: bold;
+color:#525;
+background-color:#aea;
+}
+
+.chet{
+font-size: 14pt;
+font-family: "Comic Sans MS", monotype;
+font-weight: bold;
+color:#aea;
+background-color:#525;
+}
+
+th{
+font-size: 14pt;
+font-family: "Comic Sans MS", monotype;
+font-weight: bold;
+color:#552;
+background-color:#aae;
+}
+
+
+.chetk{
+font-size: 14pt;
+font-family: "Comic Sans MS", monotype;
+font-weight: bold;
+color:#aae;
+background-color:#552;
+}
+
+li {
+font-size: 14pt;
+font-family: "Comic Sans MS", monotype;
+}
+
+
+
+p {
+font-size: 14pt;
+font-family: "Comic Sans MS", monotype;
+}
+
+body{
+    margin:0;
+    background-color:#dfd;
+}
