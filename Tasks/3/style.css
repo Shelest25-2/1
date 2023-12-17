@@ -1,17 +1,17 @@
-.nav {
+nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
 }
 
 @media all and (max-width: 800px) {
-  .nav {
+  nav {
     justify-content: space-around;
   }
 }
 
 @media all and (max-width: 500px) {
-  .nav {
+  nav {
     flex-direction: column;
   }
 }
