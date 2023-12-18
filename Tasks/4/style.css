@@ -1,0 +1,93 @@
+:root{
+    --color1:rgb(71, 207, 71);
+    --color2:rgb(10, 77, 10);
+}
+
+body{
+    background-color: #dfd;
+
+    font-family: "Comic Sans MS", monotype;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+header,footer,section{
+    padding: 60px 0;
+}
+
+header,footer{
+    background: var(--color1);
+    background: -moz-linear-gradient(left,var(--color1) 0%,var(--color2) 100%);
+    background: -webkit-linear-gradient(left,var(--color1) 0%,var(--color2) 100%);
+    background: linear-gradient(to right,var(--color1) 0%,var(--color2) 100%);
+}
+
+header{
+    padding: 60px 0;
+}
+
+header a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18pt;
+    font-family: "Comic Sans MS", monotype;
+    font-weight: bold;
+    color: rgb(197, 20, 20);
+}
+.mylink,h2{
+    border: dotted;
+    border-color:green;
+    padding:5px
+  }
+  container{
+ 
+    width: 100%;
+    margin:0 auto;
+  }
+img.moss {
+    width: 100%;
+
+    border-radius: 50%;
+  }
+section>div.container{
+    background-color: rgb(148, 202, 148);
+    padding:30px;
+}
+.col-12{
+    padding:0;
+}
+
+td,th{
+    border: solid;
+}
+td {
+    color: #525;
+    background-color: #aea;
+  }
+th {
+    color: #552;
+    background-color: #aae;
+  }
+.chet {
+    color: #aea;
+    background-color: #525;
+  }
+  .chetk {
+    color: #aae;
+    background-color: #552;
+  }
+
+table{
+    font-size: 16pt;
+}
+.colspaned{
+    color: rgb(10, 10, 194);
+    background-color: rgb(228, 141, 206);
+}
+
+header>div>div>div{
+    background: green;
+
+    border:double;
+}
+
