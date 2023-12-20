@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Задание пятое</title>
+    <link rel="shortcut icon" href="moss_ico.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <script defer>
+        var name_sp = ["Монета по одному", "Монета по два", "Монета по пять", "Монета по десять"]
+        var cost = [1, 2, 5, 10];
+        var cart = [0, 0, 0, 0]
+        function func() {
+            var storage = "";
+            let coin = document.getElementsByName("coin_list");
+            let kol = document.getElementsByName("kol-vo");
+            if (+kol[0].value > 0) {
+                let r = document.getElementById("answer");
+                console.log(typeof (kol[0]));
+                cart[coin[0].value] += +kol[0].value;
+
+                for (let i = 0; i < 4; i++) {
+                    if (cart[i] != 0)
+                        storage = storage + name_sp[i] + ": " + cart[i] + " Штук" + "<br>";
+                }
+                var sum = 0;
+                for (let i = 0; i < 4; i++) {
+                    sum += cost[i] * cart[i];
+                }
+                if (sum == 0) {
+                    storage = "Корзина пуста!";
+                }
+                else {
+                    storage += "Итого с вас: " + sum + " условных единиц";
+                }
+                r.innerHTML = storage;
+            }
+            return false;
+        }
+
+        function func_del() {
+            var storage = "";
+            let coin = document.getElementsByName("coin_list");
+            let kol = document.getElementsByName("kol-vo");
+            if (+kol[0].value > 0) {
+                let r = document.getElementById("answer");
+                console.log(typeof (kol[0]));
+                cart[coin[0].value] += -kol[0].value;
+                if (cart[coin[0].value] < 0) {
+                    cart[coin[0].value] = 0;
+                }
+
+                for (let i = 0; i < 4; i++) {
+                    if (cart[i] != 0)
+                        storage = storage + name_sp[i] + ": " + cart[i] + " Штук" + "<br>";
+                }
+                var sum = 0;
+                for (let i = 0; i < 4; i++) {
+                    sum += cost[i] * cart[i];
+                }
+                if (sum == 0) {
+                    storage = "Корзина пуста!";
+                }
+                else {
+                    storage += "Итого с вас: " + sum + " условных единиц";
+                }
+                r.innerHTML = storage;
+            }
+            return false;
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Покупайте деньги</h1>
+    <form>
+        <select name="coin_list" size="3">
+            <option disabled>Каких вам монет?</option>
+            <option selected value="0">Монета по одному</option>
+            <option value="1">Монета по два</option>
+            <option value="2">Монета по пять </option>
+            <option value="3">Монета по десять</option>
+        </select>
+        <input name="kol-vo" type="number" min="1" required placeholder="Сколько?">
+
+        <button id="button" onclick="return func();">Добавить в корзину</button>
+        <button id="button_del" onclick="return func_del();">Удалить из корзины</button>
+
+    </form>
+
+    <div id="answer">Подсчет ваших вещей</div>
+</body>
+
+</html>
