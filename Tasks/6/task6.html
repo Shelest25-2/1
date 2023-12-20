@@ -1,0 +1,201 @@
+<html>
+
+<head>
+    <script defer>
+        window.addEventListener('DOMContentLoaded', function (event) {
+            let s = document.getElementsByName("coin_list");
+            s[0].addEventListener("change", function (event) {
+                let select = event.target;
+                let radios = document.getElementById("myradios");
+                if (select.value == "1") {
+                    radios.style.display = "block";
+                }
+                else {
+                    radios.style.display = "none";
+                }
+            });
+
+            let r = document.querySelectorAll(".myradios input[type=radio]");
+            r.forEach(function (radio) {
+                radio.addEventListener("change", function (event) {
+                    let r = event.target;
+                });
+            });
+
+            let s2 = document.getElementsByName("coin_list");
+            s2[0].addEventListener("change", function (event) {
+                let select = event.target;
+                let checkers = document.getElementById("my_check_box");
+                if (select.value == "2") {
+                    checkers.style.display = "block";
+                }
+                else {
+                    checkers.style.display = "none";
+                }
+            });
+
+            let r2 = document.querySelectorAll(".my_check_box input[type=checkbox]");
+            r2.forEach(function (checkbox) {
+                checkbox.addEventListener("change", function (event) {
+                    let r2 = event.target;
+                });
+            });
+        });
+
+
+
+
+
+
+
+        var name_sp = ["Простая монета", "Монета 100лет", "Монета 200лет", "Монета 300лет", "Парная без пары", "Парная с парой"]
+        var cost = [1, 100, 200, 300, 1000, 2000];
+        var cart = [0, 0, 0, 0, 0, 0]
+        function func() {
+            var storage = "";
+            let coin = document.getElementsByName("coin_list");//Выбранный тип
+            let kol = document.getElementsByName("kol-vo");//Число
+
+            var radios = document.getElementsByName("myradio");//Возраст
+            var radio_num;
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    radio_num = i;
+                    break;
+                }
+            }
+
+            let ispair = document.getElementsByName("mycheckbox");//Парность
+            if (ispair[0].checked) {
+                ispair = 0;
+            }
+            else {
+                ispair = 1;
+            }
+
+            if (+kol[0].value > 0) {
+                let r = document.getElementById("answer");
+                if (+coin[0].value == 0)
+                    cart[0] += +kol[0].value;
+
+                if (+coin[0].value == 1)
+                    cart[+radio_num + 1] += +kol[0].value;
+
+                if (+coin[0].value == 2)
+                    if (ispair)
+                        cart[4] += +kol[0].value;
+                    else
+                        cart[5] += +kol[0].value;
+
+
+                for (let i = 0; i < 6; i++) {
+                    if (cart[i] != 0)
+                        storage = storage + name_sp[i] + ": " + cart[i] + " Штук" + "<br>";
+                }
+                var sum = 0;
+                for (let i = 0; i < 6; i++) {
+                    sum += cost[i] * cart[i];
+                }
+                if (sum == 0) {
+                    storage = "Корзина пуста!";
+                }
+                else {
+                    storage += "Итого с вас: " + sum + " условных единиц";
+                }
+                r.innerHTML = storage;
+            }
+            return false;
+        }
+
+        function func_del() {
+            var storage = "";
+            let coin = document.getElementsByName("coin_list");//Выбранный тип
+            let kol = document.getElementsByName("kol-vo");//Число
+
+            var radios = document.getElementsByName("myradio");//Возраст
+            var radio_num;
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    radio_num = i;
+                    break;
+                }
+            }
+
+            let ispair = document.getElementsByName("mycheckbox");//Парность
+            if (ispair[0].checked) {
+                ispair = 0;
+            }
+            else {
+                ispair = 1;
+            }
+
+            if (+kol[0].value > 0) {
+                let r = document.getElementById("answer");
+                if (+coin[0].value == 0)
+                    cart[0] -= +kol[0].value;
+
+                if (+coin[0].value == 1)
+                    cart[+radio_num + 1] -= +kol[0].value;
+
+                if (+coin[0].value == 2)
+                    if (ispair)
+                        cart[4] -= +kol[0].value;
+                    else
+                        cart[5] -= +kol[0].value;
+
+
+                for (let i = 0; i < 6; i++) {
+                    if (cart[i] != 0)
+                        storage = storage + name_sp[i] + ": " + cart[i] + " Штук" + "<br>";
+                }
+                var sum = 0;
+                for (let i = 0; i < 6; i++) {
+                    sum += cost[i] * cart[i];
+                }
+                if (sum == 0) {
+                    storage = "Корзина пуста!";
+                }
+                else {
+                    storage += "Итого с вас: " + sum + " условных единиц";
+                }
+                r.innerHTML = storage;
+            }
+            return false;
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Покупайте деньги</h1>
+    <form>
+        <select name="coin_list" size="1">
+            <option disabled>Каких вам монет?</option>
+            <option selected value="0">Просто монеты</option>
+            <option value="1">Старые монеты</option>
+            <option value="2">Парные монеты</option>
+        </select>
+        <br>
+
+        <div class="myradios" id="myradios" style="display: none;">
+            <label><input checked="checked" type="radio" name="myradio" value="0">100 лет</label>
+            <label><input type="radio" name="myradio" value="1">200 лет</label>
+            <label><input type="radio" name="myradio" value="2">300 лет</label>
+        </div>
+
+        <div class="my_check_box" id="my_check_box" style="display: none;">
+            <label><input checked="checked" type="checkbox" name="mycheckbox">Имеет пару</label>
+        </div>
+
+        <input name="kol-vo" type="number" min="1" required placeholder="Сколько?">
+
+        <button id="button" onclick="return func();">Добавить в корзину</button>
+        <button id="button_del" onclick="return func_del();">Удалить из корзины</button>
+
+    </form>
+
+    <div id="answer">Подсчет ваших вещей</div>
+</body>
+
+</html>
