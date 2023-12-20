@@ -9,14 +9,13 @@
     <script defer>
         var name_sp = ["Монета по одному", "Монета по два", "Монета по пять", "Монета по десять"]
         var cost = [1, 2, 5, 10];
-        var cart = [0, 0, 0, 0]
+        var cart = [0, 0, 0, 0];
         function func() {
             var storage = "";
             let coin = document.getElementsByName("coin_list");
             let kol = document.getElementsByName("kol-vo");
             if (+kol[0].value > 0) {
                 let r = document.getElementById("answer");
-                console.log(typeof (kol[0]));
                 cart[coin[0].value] += +kol[0].value;
 
                 for (let i = 0; i < 4; i++) {
@@ -44,7 +43,6 @@
             let kol = document.getElementsByName("kol-vo");
             if (+kol[0].value > 0) {
                 let r = document.getElementById("answer");
-                console.log(typeof (kol[0]));
                 cart[coin[0].value] += -kol[0].value;
                 if (cart[coin[0].value] < 0) {
                     cart[coin[0].value] = 0;
