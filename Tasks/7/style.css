@@ -1,0 +1,22 @@
+body{
+    background: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img.moss{
+    width: 100%;
+}
+
+.slick-slide {
+    margin: 0 10px;
+  }
+  
+
+.myslider{
+    background-color: lightgray;
+    padding: 16px;
+    border: solid black 8px;
+    width:40%;
+}
