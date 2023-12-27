@@ -1,5 +1,26 @@
 @import url("font/stylesheet.css");
 
+
+.video-bg{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.video-bg video{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    object-fit: cover;
+    z-index: -9999;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -12,9 +33,10 @@ body {
 }
 
 header {
-    padding: 30px 0;
+    margin: 0;
+    padding: 0;
     color: white;
-    background-color: black;
+    background-color:rgba(10,10,10,0.8);
     display: grid;
     grid-template-columns: auto 1200px auto;
 }
@@ -186,7 +208,7 @@ h1 {
     display: grid;
     grid-template-columns: auto 1200px auto;
     padding-top: 400px;
-    background-color: black;
+    background:linear-gradient(45deg,black,rgb(108, 165, 106),black);
 }
 
 .section_2_mid {
@@ -383,17 +405,11 @@ div.tarif_name {
 .team_button:hover {
     transition: 0.5s;
     background-color: black;
-    color: black;
-}
-
-.team_button>a{
-    color: black;
-}
-.team_button:hover>a{
     color: white;
 }
 
 .section_4_mid{
+    padding-bottom: 80px;
     display: grid;
 }
 .section_4_mid>.team_button{
