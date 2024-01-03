@@ -1,0 +1,171 @@
+@import url("font/stylesheet.css");
+
+:root{
+    --screen:1200px;
+    @media (max-width:1200px) {
+        --screen:900px;
+    }
+    @media (max-width:900px) {
+        --screen: 600px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+header video{
+width: 100vw;
+height: 100%;
+position: absolute;
+top: 0;
+left:0;
+object-fit: cover;
+z-index: -100;
+
+}
+
+body{
+    display: grid;
+    background: gray;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--screen);
+    justify-self: center;
+}
+
+
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    padding: 20px 0;
+    justify-content:start;
+    align-items: center;
+    width: 100%;
+    column-gap: 45px;
+}
+
+a.notlogo{
+    color: white;
+    font-size: large;
+    border-bottom: solid transparent;
+    transition: border 0.7s;
+}
+
+a.notlogo:hover{
+    border-bottom: solid lightblue;
+}
+
+.navigation>a>img{
+    height: 40px;
+    margin-right: 10px;
+}
+
+a.logo{
+    @media (max-width:1200px) {
+        margin-right: 100%;   
+    }
+}
+
+a.lastA{
+    @media (max-width:900px) {
+        align-self:flex-start;
+    }
+}
+
+.submenu{
+    padding: 5px;
+    background: rgb(0, 191, 255);
+    width: 120px;
+    position: absolute;
+}
+
+.submenu a{
+    display: block;
+    width: 100%;
+}
+.submenu>a:hover{
+    background: rgb(0, 135, 180);
+    transition: 0.9s;
+}
+
+.menu-item{
+    display: inline-block;
+    position: relative;
+}
+
+.header_bott{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    @media (max-width:900px) {
+        width: 100%;
+    }
+}
+
+.header_bott-left>*{
+    margin: 15px 0;
+}
+
+.header-button{
+    padding: 20px 0;
+    display: inline-block;
+    width: 200px;
+    border: solid lightblue;
+    border-radius: 10px;
+    text-align: center;
+    transition:0.7s;
+    font-weight: 500;
+}
+
+.header-button:hover{
+background: lightblue;
+color: black;
+}
+
+h1{
+    font-size: 52px;
+}
+
+.subtext{
+    font-size: 18px;
+    font-weight: 500;
+    color: darkgray;
+}
+
+.header_bott-right{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 20px;
+}
+.header_bott-right>div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: darkgray;
+    padding-left: 5px;
+    height: 80%;
+    border-left: solid 5px pink;
+}
+.header_bott img{
+    height: 60px;
+}
