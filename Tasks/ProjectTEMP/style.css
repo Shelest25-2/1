@@ -18,8 +18,8 @@
     text-decoration: none;
 }
 
-header{
-    display: grid;
+.BIG_section{
+    display: flex;
     justify-content: center;
     width: 100%;
     overflow: hidden;
@@ -43,7 +43,7 @@ body{
     background: gray;
 }
 
-.header{
+.section{
     display: flex;
     flex-wrap: wrap;
     width: var(--screen);
@@ -168,4 +168,50 @@ h1{
 }
 .header_bott img{
     height: 60px;
+}
+
+.big1{
+    padding: 60px 0;
+    background-color: #0e1a2e;
+}
+
+.eight_icons{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 40px;
+}
+
+.icon{
+    display: grid;
+    row-gap: 10px;
+    background: #274587;
+    width:50%;
+    padding: 15px;
+    border-radius: 20px;
+    position: relative;
+    border: solid rgba(0, 0, 0, 0.7) 10px;
+}
+
+.icon>img{
+    width: 80px;
+    justify-self: center;
+    z-index: 10;
+}
+.help{
+    justify-self: center;
+    align-self: center;
+    transform:scaleY(4);
+}
+
+.kromer{
+    opacity: 0.1;
+    display: block;
+    position: absolute;/*У родителя position должно быть не static*/
+    width: 100px;
+    height: 100px;
+    background: url(Kromer.png) no-repeat;
+    background-size: contain;
+    z-index: 0;
+    left: -40px;
+    top: -20px;
 }
