@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"> </script>
     <script defer src="slider_script.js"> </script>
@@ -151,7 +151,7 @@
                         <div class="kromer"></div>
                         <img src="eight_pics/single.gif" alt="single">
                         <div class="subtext">
-                            Знакомься с местными<br>
+                            Знакомся с местными<br>
                             одиночками прямо<br>
                             СЕЙЧАС<br>
                         </div>
@@ -260,26 +260,36 @@
                     <div class="quadro" id="quadro">
                         <div class="quadro_item">
                             <h2 class="KeyGen">К е й Г е н</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, rerum dolor. Quis,
-                            delectus! Accusantium illum, eaque nemo error odit ex.<br>
+                            * КЛЮЧЕВОЙПРЕДМЕТ!<br>
+                            * 100% СЕРТИФИЦИРОВАННЫЙ ВАРЕЗ<br>
+                            <br>
+                            [Мрачно выглядящая программа, открывающая определённые двери.]
                             <a href="#!">Купить</a>
                         </div>
                         <div class="quadro_item">
                             <h2>С.Отрава</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, rerum dolor. Quis,
-                            delectus! Accusantium illum, eaque nemo error odit ex.<br>
+                            * ПРЕДМЕТ ПРЕДМЕТ СИЛЬНО ВЛИЯЕТ НА HP!<br>
+                            * МЯГКИЙ ВКУС<br>
+                            <br>
+                            Вредит члену команды<br>
+                            Странная смесь разноцветных квадратов. Отравит вас.
                             <a href="#!">Купить</a>
                         </div>
                         <div class="quadro_item">
                             <h2>Большой</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, rerum dolor. Quis,
-                            delectus! Accusantium illum, eaque nemo error odit ex.<br>
+                            * РАЗРЕЗАЕТ ВСЁ НА ДВЕ ЧАСТИ! <br>
+                            * КРИМИНАЛ!<br>
+                            <br>
+                            «БОЛЬШОЙ» ... <br>
+                            Бракованный меч, разломанный на две части. Похоже вы не можете взять его...
                             <a href="#!">Купить</a>
                         </div>
                         <div class="quadro_item">
                             <h2>Галстук Большой ШИШКИ</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, rerum dolor. Quis,
-                            delectus! Accusantium illum, eaque nemo error odit ex.<br>
+                            * ЭКСКЛЮЗИВНО ОФИЦИАЛЬНО СПАМТОН<br>
+                            <br>
+                            Потрёпанный галстук-бабочка<br>
+                            Похоже, он потерял большую часть своего защитного потенциала.
                             <a href="#!">Купить</a>
                         </div>
                     </div>
@@ -570,8 +580,8 @@
                 ✉ spamton@spamton.BIG
             </div>
         </div>
-        <div>
-            <form action="https://formcarry.com/s/ogxpmhrEwlN" method="POST">
+        <div class="for_form">
+            <form action="https://formcarry.com/s/WOnJ3kf1t7j" method="POST">
                 <input name="text" type="text" required placeholder="Имя">
                 <input name="tel" type="tel" required placeholder="Телефон">
                 <input name="mail" type="email" required placeholder="Email">
@@ -581,9 +591,6 @@
                 <span class="span_butt"></span>
                 <span class="text_span">Отправляя заявку, вы соглашаетесь отдать все ваши <a style="color: red;" href="#!">кромеры</a></span>
                 </label>  
-                
-                <input type="hidden" name="_next" value="https://shelest25-2.github.io/web/Tasks/Project/project.html">
-                
                 <input name="submit" class="submit" value="Отдать [3 цифры с оборота]"  type="submit">
                   
              
@@ -606,7 +613,37 @@
         </div>
         </div>
     </div>
+
+
+
+    <div class="mobile_menu">
+        <a class="mob_left" href="#!"><img src="logo.svg" ></a>
+        <a onclick="open_close_menu()" class="mob_right" href="#!"><img src="burger.png" alt=""></a>
+    </div>
+    <div class="mobile_menu_content ">
+        <a class="red" href="#!">Текст</a>
+        <a onclick="menu_menu(0)" class="menu_menu" href="#!">Меню</a>
+        <div class="menu_menu_child">
+            <a href="#!"> Пункт меню</a>
+            <a href="#!"> Пункт меню</a>
+            <a href="#!"> Пункт меню</a>
+            <a href="#!"> Пункт меню</a>
+            <a href="#!"> Пункт меню</a>
+        </div>
+        <a href="#!">Текст</a>
+        <a href="#!">Текст</a>
+        <a  onclick="menu_menu(1)" class="menu_menu" href="#!">Меню</a>
+        <div class="menu_menu_child">
+            <a href="#!"> Пункт меню</a>
+            <a href="#!"> Пункт меню</a>
+            <a href="#!"> Пункт меню</a>
+            <a href="#!"> Пункт меню</a>
+        </div>
+        <a href="#!">Текст</a>
+        <a href="#!">Текст</a>
+    </div>
 </body>
+
 <script>
     function open_close(i){
     var hidens=document.querySelectorAll(".hiden");
@@ -614,5 +651,24 @@
     if(hiden.classList.contains("show"))
         hiden.classList.remove("show");
     else hiden.classList.add("show");
+}
+</script>
+
+<script>
+    function menu_menu(i){
+    var hidens=document.querySelectorAll(".menu_menu_child");
+    var hiden=hidens[i];
+    if(hiden.classList.contains("show_menu_child"))
+        hiden.classList.remove("show_menu_child");
+    else hiden.classList.add("show_menu_child");
+}
+</script>
+
+<script>
+    function open_close_menu(){
+    var m_cont=document.querySelector(".mobile_menu_content");
+    if(m_cont.classList.contains("show_menu"))
+        m_cont.classList.remove("show_menu");
+    else m_cont.classList.add("show_menu");
 }
 </script>
